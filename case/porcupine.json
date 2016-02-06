@@ -1,0 +1,35 @@
+{
+	"ClosedSystem": {
+		"system": {
+			"type": "closed",
+			"threads": "5",
+			"thinkTime": {
+				"distr": "Exponent",
+				"lambda": "0.002"
+			}
+		},
+		"param": {
+		},
+		"class": "demo.so",
+		"runtime": "60",
+		"caseName": "closed"
+	},
+	"Test":{
+		"system": {
+			"type": "open",
+			"arrivalTime": {
+				"distr": "Constant",
+				"value": "23"
+			}
+		},
+		"param": {
+			"A": {
+				"distr": "Constant",
+				"value": "23"
+			}
+		},
+		"class": "demo.so",
+		"runtime": "7400",
+		"caseName": "period"
+	}
+}
